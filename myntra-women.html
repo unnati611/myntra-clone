@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myntra clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="./myntra.avif" alt="myntra" onmouseover="mainpage()" />
+      </div>
+      <div class="list">
+        <ul>
+          <li class="mendiv" onmouseover="men()" onmouseleave="removemendiv() ">
+            <a href="myntra-men.html">MEN</a>
+          </li>
+          <li
+            class="womendiv"
+            onmouseover="women()"
+            onmouseleave="removewomendiv() "
+          >
+            <a href="myntra-women.html">WOMEN</a>
+          </li>
+          <li
+            class="kidsdiv"
+            onmouseover="kids()"
+            onmouseleave="removekidsdiv()"
+          >
+            KIDS
+          </li>
+          <li
+            class="homediv"
+            onmouseover="home()"
+            onmouseleave="removehomediv()"
+          >
+            HOME & LIVING
+          </li>
+          <li>BEAUTY</li>
+          <li>STUDIO</li>
+        </ul>
+      </div>
+      <div class="searchbox">
+        <div class="search">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="
+              color: #adb1b8;
+              font-size: 20px;
+              margin: 5px;
+              font-weight: 600;
+            "
+          ></i>
+        </div>
+        <input
+          type="text"
+          placeholder="  Search for products,brands and more"
+        />
+      </div>
+      <div class="more">
+        <div class="profile">
+          <i
+            style="
+              color: black;
+              font-size: 20px;
+              margin: 2px 14px;
+              font-weight: 600;
+            "
+            class="fa fa-light fa-user"
+          ></i>
+          <p>Profile</p>
+        </div>
+        <div class="heart">
+          <i
+            style="
+              color: black;
+              font-size: 20px;
+              margin: 2px 11px;
+              font-weight: 600;
+            "
+            class="fa fa-light fa-heart"
+          ></i>
+          <p>Wishlist</p>
+        </div>
+        <div class="bag">
+          <i
+            style="
+              color: black;
+              font-size: 20px;
+              margin: 2px 14px;
+              font-weight: 600;
+            "
+            class="fa fa-light fa-bag-shopping"
+          ></i>
+          <p style="margin-left: 4px">Bag</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="maincontainer1" class="listcontent" onmouseleave="removemendiv()">
+      <div class="menlist">
+        <div class="menlista">
+          <p class="menlist-a-heading">Topwear</p>
+          <a href="">T-Shirts</a>
+          <a href="">Casual Shirts</a>
+          <a href="">Formal Shirts</a>
+          <a href="">Sweatshirts</a>
+          <a href="">Sweaters</a>
+          <a href="">Jackets</a>
+          <a href="">Blazers & Coats</a>
+          <a href="">Suits</a>
+          <a href="">Rain-Jackets</a>
+          <hr />
+          <p class="menlist-a-heading">Indian & Festive Wear</p>
+          <a href="">Kurtas & KurtaSets</a>
+          <a href="">Sherwanis</a>
+          <a href="">Nehru Jackets</a>
+          <a href="">Dhotis</a>
+        </div>
+        <div class="menlistb">
+          <p class="menlist-a-heading">Bottomwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="menlist-a-heading">Innerwear & sleepwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="menlist-a-heading">Plus-sizes</p>
+        </div>
+        <div class="menlistc">
+          <p class="menlist-a-heading">Footwear</p>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <hr />
+          <p class="menlist-a-heading">Presonalcare & Grooming</p>
+          <p class="menlist-a-heading">Sunglasses & Frames</p>
+          <p class="menlist-a-heading">Watches</p>
+        </div>
+        <div class="menlistd">
+          <p class="menlist-a-heading">Sports& Activewear</p>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <hr />
+          <p class="menlist-a-heading">Gadgets</p>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+        </div>
+        <div class="menliste">
+          <p class="menlist-a-heading">Fashion Accessories</p>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <hr />
+          <p class="menlist-a-heading">Bags & Backpacks</p>
+          <p class="menlist-a-heading">Luggage & Trolleys</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="maincontainer2"
+      class="listcontent"
+      onmouseleave="removewomendiv()"
+    >
+      <div class="womenlist">
+        <div class="womenlista">
+          <p class="womenlist-a-heading">Indian & Fusionwear</p>
+          <a href="">Kurta & Suites</a>
+          <a href="">Kurtis & Top</a>
+          <a href="">Sarres</a>
+          <a href="">Ethnic Wear</a>
+          <a href="">Leggings,Salwar &Churidar</a>
+          <a href="">Skirts & Plazzo</a>
+          <a href="">Dress-Materials</a>
+          <a href="">Lehnga-Cholis</a>
+          <a href="">Dupattas & Shawl</a>
+          <a href="">Jackets</a>
+          <hr />
+          <p class="womenlist-a-heading">Belts,Scarves & More</p>
+          <p class="womenlist-a-heading">Watches & Wearables</p>
+        </div>
+        <div class="womenlistb">
+          <p class="womenlist-a-heading">Westernwear</p>
+          <a href="">Dresses</a>
+          <a href="">T-shirts</a>
+          <a href="">Tops</a>
+          <a href="">Jeans</a>
+          <a href="">Trousers & Capris</a>
+          <a href="">Shorts & skirts</a>
+          <a href="">Co-Ords</a>
+          <a href="">Playsuites</a>
+          <a href="">JumpSuites</a>
+          <a href="">Shrugs</a>
+          <a href="">Shwetaer</a>
+          <a href="">Jackets & Coats</a>
+          <a href="">Blazers</a>
+          <hr />
+
+          <p class="womenlist-a-heading">Plus-sizes</p>
+        </div>
+        <div class="womenlistc">
+          <p class="womenlist-a-heading">Maternity"</p>
+          <p class="womenlist-a-heading">Sunglasses & Frames</p>
+          <p class="womenlist-a-heading">Footwear</p>
+          <a href="">FLats</a>
+          <a href="">Sports Shoes</a>
+          <a href="">Formal Shoes</a>
+          <a href="">Sneakers</a>
+          <a href="">Heels</a>
+          <a href="">Boots</a>
+          <a href="">Socks</a>
+          <hr />
+          <p class="womenlist-a-heading">Sports& Activewear</p>
+          <a href="">Clothing</a>
+          <a href="">Footwear</a>
+          <a href="">Sport Accecories</a>
+          <a href="">Sport Eqipment</a>
+        </div>
+        <div class="womenlistd">
+          <p class="womenlist-a-heading">Lingerie & Sleepwear</p>
+          <a href="">Bra</a>
+          <a href="">Briefs</a>
+          <a href="">Shapewear</a>
+          <a href="">Sleepwear & Loungewear</a>
+          <a href="">SwimWear</a>
+          <a href="">Thermals</a>
+          <hr />
+          <p class="womenlist-a-heading">Beauty & Personal Care</p>
+          <a href="">Makeup</a>
+          <a href="">Skincare</a>
+          <a href="">Preimuiem Beauty</a>
+          <a href="">Lipstick</a>
+          <a href="">Fragrances</a>
+        </div>
+        <div class="womenliste">
+          <p class="womenlist-a-heading">Gadgets</p>
+          <a href="">Smart Wearable</a>
+          <a href="">Fitness Gadgets</a>
+          <a href="">Headphones</a>
+          <a href="">Speakers</a>
+          <hr />
+          <p class="womenlist-a-heading">Jewellery</p>
+          <a href="">Fashion Jewellery</a>
+          <a href="">Fine Jewellery</a>
+          <a href="">Earings</a>
+          <hr />
+          <p class="womenlist-a-heading">Backpacks</p>
+          <p class="womenlist-a-heading">Handbags,bags & Wallets</p>
+          <p class="womenlist-a-heading">Luggage & Trolleys</p>
+        </div>
+      </div>
+    </div>
+    <div id="maincontainer3" class="listcontent" onmouseleave="removekidsdiv()">
+      <div class="kidslist">
+        <div class="kidslista">
+          <p class="kidslist-a-heading">Topwear</p>
+          <a href="">T-Shirts</a>
+          <a href="">Casual Shirts</a>
+          <a href="">Formal Shirts</a>
+          <a href="">Sweatshirts</a>
+          <a href="">Sweaters</a>
+          <a href="">Jackets</a>
+          <a href="">Blazers & Coats</a>
+          <a href="">Suits</a>
+          <a href="">Rain-Jackets</a>
+          <hr />
+          <p class="kidslist-a-heading">Indian & Festive Wear</p>
+          <a href="">Kurtas & KurtaSets</a>
+          <a href="">Sherwanis</a>
+          <a href="">Nehru Jackets</a>
+          <a href="">Dhotis</a>
+        </div>
+        <div class="kidslistb">
+          <p class="kidslist-a-heading">Bottomwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="kidslist-a-heading">Innerwear & sleepwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="kidslist-a-heading">Plus-sizes</p>
+        </div>
+        <div class="kidslistc">
+          <p class="kidslist-a-heading">Footwear</p>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <hr />
+          <p class="kidslist-a-heading">Presonalcare & Grooming</p>
+          <p class="kidslist-a-heading">Sunglasses & Frames</p>
+          <p class="kidslist-a-heading">Watches</p>
+        </div>
+        <div class="kidslistd">
+          <p class="kidslist-a-heading">Sports& Activewear</p>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <hr />
+          <p class="kidslist-a-heading">Gadgets</p>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+        </div>
+        <div class="kidsliste">
+          <p class="kidslist-a-heading">Fashion Accessories</p>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <hr />
+          <p class="kidslist-a-heading">Bags & Backpacks</p>
+          <p class="kidslist-a-heading">Luggage & Trolleys</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="maincontainer4"
+      class="listcontent"
+      onmouseleave="removehomediv() "
+    >
+      <div class="homelist">
+        <div class="homelista">
+          <p class="homelist-a-heading">Topwear</p>
+          <a href="">T-Shirts</a>
+          <a href="">Casual Shirts</a>
+          <a href="">Formal Shirts</a>
+          <a href="">Sweatshirts</a>
+          <a href="">Sweaters</a>
+          <a href="">Jackets</a>
+          <a href="">Blazers & Coats</a>
+          <a href="">Suits</a>
+          <a href="">Rain-Jackets</a>
+          <hr />
+          <p class="homelist-a-heading">Indian & Festive Wear</p>
+          <a href="">Kurtas & KurtaSets</a>
+          <a href="">Sherwanis</a>
+          <a href="">Nehru Jackets</a>
+          <a href="">Dhotis</a>
+        </div>
+        <div class="homelistb">
+          <p class="homelist-a-heading">Bottomwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="homelist-a-heading">Innerwear & sleepwear</p>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <a href="">Sherwanis</a>
+          <hr />
+          <p class="homelist-a-heading">Plus-sizes</p>
+        </div>
+        <div class="homelistc">
+          <p class="homelist-a-heading">Footwear</p>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <a href="">Casual Shoes</a>
+          <hr />
+          <p class="homelist-a-heading">Presonalcare & Grooming</p>
+          <p class="homelist-a-heading">Sunglasses & Frames</p>
+          <p class="homelist-a-heading">Watches</p>
+        </div>
+        <div class="homelistd">
+          <p class="homelist-a-heading">Sports& Activewear</p>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <a href="">Sport Shoes</a>
+          <hr />
+          <p class="homelist-a-heading">Gadgets</p>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+          <a href="">SmartWearable</a>
+        </div>
+        <div class="homeliste">
+          <p class="homelist-a-heading">Fashion Accessories</p>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <a href="">Wallets</a>
+          <hr />
+          <p class="homelist-a-heading">Bags & Backpacks</p>
+          <p class="homelist-a-heading">Luggage & Trolleys</p>
+        </div>
+      </div>
+    </div>
+    <div class="maincontainer">
+      <div class="img1">
+        <img src="img1.webp" alt="" width="99%" height="125px" />
+      </div>
+      <div class="img2">
+        <img src="img2.webp" alt="" width="99%" height="425px" />
+      </div>
+      <div class="img3">
+        <img src="img3.webp" alt="" width="99%" height="75px" />
+      </div>
+      <div class="img4">
+        <img src="img4.webp" alt="" width="99%" height="100px" />
+      </div>
+      <div class="coupenimg">
+        <div class="img5">
+          <img src="img5.webp" alt="" width="99.9%" height="150px" />
+        </div>
+        <div class="img6">
+          <img src="img6.webp" alt="" width="99.9%" height="150px" />
+        </div>
+      </div>
+      <div class="img7">
+        <img src="img7.webp" alt="" width="99%" height="120px" />
+      </div>
+      <div class="discountimg">
+        <div class="b-1">
+          <img src="b-1.webp" alt="" width="240px" height="300px" />
+        </div>
+        <div class="b2">
+          <img src="b2.webp" alt="" width="240px" height="300px" />
+        </div>
+        <div class="b3">
+          <img src="b3.webp" alt="" width="240px" height="300px" />
+        </div>
+        <div class="b4">
+          <img src="b4.webp" alt="" width="240px" height="300px" />
+        </div>
+        <div class="b5">
+          <img src="b5.webp" alt="" width="240px" height="300px" />
+        </div>
+        <div class="b6">
+          <img src="b6.webp" alt="" width="240px" height="300px" />
+        </div>
+      </div>
+      <div class="category">
+        <div class="b6">
+          <img src="c1.webp" alt="" width="99%" height="100px" />
+        </div>
+      </div>
+      <div class="categoryimg_a">
+        <div class="c-1">
+          <img src="c-1.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c2">
+          <img src="c2.jpeg" alt="" width="240" height="250px" />
+        </div>
+        <div class="c3">
+          <img src="c3.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c4">
+          <img src="c4.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c5">
+          <img src="c5.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c6">
+          <img src="c6.webp" alt="" width="240" height="250px" />
+        </div>
+      </div>
+      <div class="categoryimg_b">
+        <div class="c7">
+          <img src="c7.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c8">
+          <img src="c8.jpeg" alt="" width="240" height="250px" />
+        </div>
+        <div class="c9">
+          <img src="c9.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c10">
+          <img src="c10.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c11">
+          <img src="c11.webp" alt="" width="240" height="250px" />
+        </div>
+        <div class="c12">
+          <img src="c12.webp" alt="" width="240" height="250px" />
+        </div>
+      </div>
+      <div class="categoryimg_c">
+        <div class="c13">
+          <img src="c13.jpeg" alt="" width="290" height="300px" />
+        </div>
+        <div class="c14">
+          <img src="c14.webp" alt="" width="290" height="300px" />
+        </div>
+        <div class="c15">
+          <img src="c15.webp" alt="" width="290" height="300px" />
+        </div>
+      </div>
+      <div class="lastimg">
+        <div class="d1">
+          <img src="d1.webp" alt="" width="99.9%" height="260px" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="shopingdetails">
+        <div class="d1">
+          <a class="d1-heading" href="">ONLINE SHOPPING</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">Kids</a>
+          <a href="">Home & Living</a>
+          <a href="">Beauty</a>
+          <a href="">Gift cards</a>
+          <a href="">Myntra Insider</a>
+          <br />
+          <br />
+          <a class="d1-heading" href="">USEFUL LINKS</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+          <a href="">Site Map</a>
+          <a href="">Corporate Information</a>
+          <a href="">Whitehat</a>
+        </div>
+        <div class="d2">
+          <a class="d2-heading" href="">CUSTOMER POLICIES</a>
+          <a href="">Contact Us</a>
+          <a href="">FAQ</a>
+          <a href="">T&C</a>
+          <a href="">Terms Of Use</a>
+          <a href="">Track Order</a>
+          <a href="">Shipping</a>
+          <a href="">Cancellation</a>
+          <a href="">Returns</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Grivance Officer</a>
+        </div>
+        <div class="d3">
+          <p>EXPERIENCE MYNTRA APP ON MOBILE</p>
+          <span
+            ><img src="footer1.png" alt="" width="160px" height="50px" /></span
+          ><span>
+            <img src="f2.png" alt="" width="160px" height="50px" />
+          </span>
+          <br />
+          <br />
+          <p>KEEP IN TOUCH</p>
+          <span
+            ><img
+              src="facebookimg.png"
+              alt=""
+              width="30px"
+              height="20px" /></span
+          ><span>
+            <img
+              src="twiter-img.png"
+              alt=""
+              width="30px"
+              height="20px"
+            /> </span
+          ><span
+            ><img
+              src="youtube-img.png"
+              alt=""
+              width="30px"
+              height="20px" /></span
+          ><span>
+            <img src="instagram-img.png" alt="" width="30px" height="20px" />
+          </span>
+        </div>
+        <div class="d4">
+          <div class="d4a">
+            <div class="d4a1">
+              <img src="original.png" alt="" width="60px" height="35px" />
+            </div>
+            <div class="d4a2">
+              <h5>100% ORIGINAL<span>gurantee For</span></h5>
+              <p>all products at myntra.com</p>
+            </div>
+          </div>
+          <div class="d4b">
+            <div class="d4b1">
+              <img src="return-img.png" alt="" width="60px" height="35px" />
+            </div>
+            <div class="d4b2">
+              <h5>Return Within 14days<span>of</span></h5>
+              <p>recieving your order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* margin: 25px; */
+    position: fixed;
+    background-color: white;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+
+}
+
+.logo img {
+    width: 110px;
+    height: 60px;
+    margin: 10px;
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    list-style: NONE;
+    display: inline-block;
+    margin: 30px 20px 10px 20px;
+    font-size: 13px;
+    font-weight: 900;
+    color: black;
+
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.maincontainer {
+    position: relative;
+}
+
+.menlist {
+    width: auto;
+    height: auto;
+    display: flex;
+    transition: 4s ease-out;
+    position: absolute;
+    left: 10%;
+    z-index: 1;
+
+}
+
+.menlista {
+    background-color: white;
+    
+
+}
+
+.menlistb {
+    background-color: rgb(244, 244, 244);
+}
+
+.menlistc {
+    background-color: white;
+    
+}
+
+.menlistd {
+    background-color: rgb(244, 244, 244);
+}
+
+.menliste {
+    background-color: white;
+    
+}
+
+.menlist-a-heading {
+    color: rgb(253, 3, 3);
+    font-size: 15px;
+    font-weight: 900;
+    margin: 5px 9px;
+}
+
+.menlista a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.menlistb a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+
+}
+
+.menlistc a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.menlistd a {
+    display: block;
+    font-size: 13px;
+    margin: 7px 9px;
+    text-decoration: none;
+        color: black
+}
+
+.menliste a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.womenlist {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    left: 18%;
+    z-index: 1;
+}
+
+.womenlista {
+    background-color: white;
+    
+}
+
+.womenlistb {
+    background-color: rgb(244, 244, 244);
+}
+
+.womenlistc {
+    background-color: white;
+    
+}
+
+.womenlistd {
+    background-color: rgb(244, 244, 244);
+}
+
+.womenliste {
+    background-color: white;
+    
+}
+
+.womenlist-a-heading {
+    color: rgb(225, 37, 165);
+    font-size: 15px;
+    font-weight: 900;
+    margin: 7px 9px;
+}
+
+.womenlista a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.womenlistb a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+
+}
+
+.womenlistc a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.womenlistd a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.womenliste a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+.kidslist {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+}
+
+.kidslista {
+    background-color: white;
+    
+}
+
+.kidslistb {
+    background-color: rgb(244, 244, 244);
+}
+
+.kidslistc {
+    background-color: white;
+    
+}
+
+.kidslistd {
+    background-color: rgb(244, 244, 244);
+}
+
+.kidsliste {
+    background-color: white;
+    
+}
+
+.kidslist-a-heading {
+    color: rgb(230, 80, 26);
+    font-size: 15px;
+    font-weight: 900;
+    margin: 7px 9px;
+}
+
+.kidslista a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.kidslistb a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+
+}
+
+.kidslistc a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.kidslistd a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.kidsliste a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+.homelist {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+}
+
+.homelista {
+    background-color: white;
+    
+}
+
+.homelistb {
+    background-color: rgb(244, 244, 244);
+}
+
+.homelistc {
+    background-color: white;
+    
+}
+
+.homelistd {
+    background-color: rgb(244, 244, 244);
+}
+
+.homeliste {
+    background-color: white;
+    
+}
+
+.homelist-a-heading {
+    color: rgb(219, 156, 41);
+    font-size: 15px;
+    font-weight: 900;
+    margin: 7px 9px;
+}
+
+.homelista a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.homelistb a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+
+}
+
+.homelistc a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.homelistd a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+
+.homeliste a {
+    display: block;
+    font-size: 13px;
+    margin: 5px 9px;
+    text-decoration:none;
+    color:black
+}
+.listcontent{
+   z-index: 1;
+  display: none;
+}
+.mendiv:hover,
+.womendiv:hover,
+.homediv,
+.kidsdiv:hover {
+    border-bottom: 2px solid;
+}
+.searchbox {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    margin: 25px 15px;
+    background-color: rgb(244, 244, 244);
+}
+
+.search {
+    width: 30px;
+    height: 50px;
+    margin: 5px;
+    font-weight: 400;
+
+}
+
+.searchbox:hover {
+    outline: solid 2px black;
+}
+
+.searchicon {
+    width: 50px;
+    height: 50px;
+}
+
+.searchbox input {
+    width: 400px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 300;
+
+
+}
+
+.maincontainer {
+    margin-top: 100px;
+}
+
+.mainimg1 {
+    display: flex;
+}
+
+.more {
+    display: flex;
+    font-size: 10px;
+    margin: 25px 15px;
+    font-weight: 900;
+}
+
+.profile {
+    margin: 2px 5px
+}
+
+.heart {
+    margin: 2px 5px
+}
+
+.bag {
+    margin: 2px 5px
+}
+
+.coupenimg {
+    display: flex;
+}
+
+.discountimg {
+    display: flex;
+    width: 99%;
+    /* justify-content: space-evenly; */
+    margin-top: 25px;
+}
+
+.categoryimg_a {
+    display: flex;
+}
+
+.categoryimg_b {
+    display: flex;
+}
+
+.categoryimg_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+}
+
+.shopingdetails {
+    display: flex;
+}
+
+.d1 a.d1-heading {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+}
+
+.d1 a {
+    text-decoration: none;
+    color: rgb(83, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+
+
+}
+
+.d2 a.d2-heading {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+}
+
+.d2 a {
+    text-decoration: none;
+    color: rgb(83, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+
+}
+
+.d3 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black
+}
+
+.d1 {
+    margin: 20px
+}
+
+.d2 {
+    margin: 20px
+}
+
+.d3 {
+    margin: 20px
+}
+
+.d4 {
+    margin: 20px
+}
+
+.d4a {
+    display: flex;
+}
+
+.d4b {
+    display: flex;
+}
+
+.d4a2 h5 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black
+}
+
+.d4a2 p {
+    color: rgb(83, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.d4b2 p {
+    color: rgb(83, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.d4b2 h5 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black
+}
